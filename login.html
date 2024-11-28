@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: orange;
+        }
+        .header {
+            background-color: white;
+            color: black;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+        .box {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            flex: 1;
+            max-width: 45%;
+            min-width: 250px;
+        }
+        .box h2 {
+            margin-top: 0;
+        }
+        .box p {
+            font-size: 1.5em;
+            margin: 0;
+        }
+        .chart {
+            width: 100%;
+            height: 200px;
+            background-color: #e2e2e2;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Dashboard</h1>
+    </div>
+
+    <div class="container">
+      
+        <div class="box">
+            <h2>Total Sales</h2>
+            <p>₱12,345</p>
+        </div>
+        
+      
+        <div class="box">
+            <h2>Total Burgers Sold</h2>
+            <p>1,500</p>
+        </div>
+
+       
+        <div class="box">
+            <h2>Most Popular Burger</h2>
+            <p>Classic burger</p>
+        </div>
+
+       
+        <div class="box">
+            <h2>Sales Over Time</h2>
+            <div class="chart" id="salesChart"></div>
+        </div>
+        
+        
+        <div class="box">
+            <h2>Customer Feedback</h2>
+            <p>4.5/5 (Based on 120 reviews)</p>
+        </div>
+    </div>
+</body>
+</html>
